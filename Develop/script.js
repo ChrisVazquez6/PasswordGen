@@ -11,9 +11,9 @@ const passPromt = () => {
   hasUpper =confirm('do you want to uppercase character')
   hasNumbers=confirm('do you want to Number character')
   hasSpecChars=confirm('do you want special Character')
-  console.log(passlength,hasLower,hasUpper,hasNumbers,hasSpecChars,);
-  if(isNaN(passlength)=true || passlength < 8||     passlength > 128){
-    alert('your password needs to be a number between 8 and 128')
+  console.log(passlength,hasLower,hasUpper,hasNumbers,hasSpecChars)
+  if(isNaN(passlength)=true||passlength<8||passlength>128){
+    alert('your password needs to be a # between 8 and 128')
     passPromt()
   }
 }
