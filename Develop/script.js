@@ -12,10 +12,39 @@ const passPromt = () => {
   hasNumbers=confirm('do you want to Number character')
   hasSpecChars=confirm('do you want special Character')
   console.log(passlength,hasLower,hasUpper,hasNumbers,hasSpecChars)
-  if(isNaN(passlength)=true||passlength<8||passlength>128){
+  if(isNaN(passlength)==true||passlength<8||passlength>128){
     alert('your password needs to be a # between 8 and 128')
     passPromt()
   }
+}
+
+const passGenerate = ()=> {
+  let lowerString = 'abcdefghijklmnopqrstuvwxyz'
+  let upperString = 'abcdefghijklmnopqrstuvwxyz'
+  let numString = '0123456789'
+  let specString = '!@#$%^&*()'
+  let chosenString = ''
+
+  if (hasLower === true) {
+    chosenString += lowerString
+  }
+  if (hasUpper === true) {
+    chosenString += upperString
+  }
+  if (hasNumbers === true) {
+    chosenString += numString
+  }
+  if (hasSpecChars === true) {
+    chosenString += specString
+  }
+  console.log(chosenString)
+
+
+
+
+
+
+
 }
 
 
@@ -27,5 +56,6 @@ const passPromt = () => {
 
 document.getElementById('generate').addEventListener('click', () => {
   passPromt()
+  passGenerate()
 
 })
