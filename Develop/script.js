@@ -49,32 +49,6 @@ const passGenerate = ()=> {
   console.log(password);
   return password
 }
-// let tentativePassword
-// const passVerify = ()=>{
-//  tentativePassword = passGenerate()
-//  if(hasLower===true){
-//    let verifiedLower = false
-//    for (let i = 0; i< passlength; i++) {
-//      let possibleLower = tentativePassword[i]
-//      console.log(possibleLower)
-//      if (possibleLower==='a'||possibleLower==='b'||possibleLower==='c'||possibleLower==='d'||possibleLower==='e'||possibleLower==='f'||possibleLower==='g'||possibleLower==='h'||possibleLower==='i'||possibleLower==='j'||possibleLower==='k'||possibleLower==='l'||possibleLower==='m'||possibleLower==='n'||possibleLower==='o'||possibleLower==='p'||possibleLower==='q'||possibleLower==='r'||possibleLower==='s'||possibleLower==='t'||
-//      possibleLower==='u'||possibleLower==='v'||possibleLower==='w'||possibleLower==='x'||possibleLower==='y'||possibleLower==='z') {
-//        verifiedLower=true
-//      }
-//     }
-//      if (verifiedLower === false) {
-//        console.log('no lowercase characters');
-//        passVerify()
-//      }
-
-       
-     
-    
-
-
-
-
-
 
 
 
