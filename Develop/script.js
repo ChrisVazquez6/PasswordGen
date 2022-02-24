@@ -38,7 +38,6 @@ const passGenerate = ()=> {
   if (hasSpecChars === true) {
     chosenString += specString
   }
-  console.log(chosenString)
 
   for (let i = 0; i < passlength; i++) {
     let randomIndex = Math.floor(Math.random() * chosenString.length)
@@ -54,10 +53,9 @@ const passGenerate = ()=> {
 
 document.getElementById('generate').addEventListener('click', () => {
   passPromt()
-  // passGenerate()
-  let newpassword = passGenerate()
-  console.log(newpassword);
-  document.getElementById('password').innerHTML=newpassword
+  let password = passGenerate()
+  console.log(password);
+  document.getElementById('password').innerHTML=password
 
 
 })
